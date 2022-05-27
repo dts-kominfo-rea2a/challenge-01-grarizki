@@ -1,7 +1,7 @@
 // TODO: Buatlah data dari kedua user di sini
 // Tentukan tipe data dan struktur data yang menurut kalian tepat
 // Kalian bisa membuat variabel lain untuk dimasukkan ke dalam atribut user agar lebih mudah dibaca
-const firstFavoriteRestaurantData = [
+const firstFavoriteRestaurantArray = [
     "Bento",
     "Sushi",
     "Pancake",
@@ -15,16 +15,12 @@ const firstFavoriteRestaurantData = [
     "Sushi",
 ]
 
-const firstFavoriteColorData = ["Yellow", "Pink", "White", "Purple"]
+const firstFavoriteColorArray = ["Yellow", "Pink", "White", "Purple"]
 
-const firstFavoriteRestaurant = new Set()
-while (firstFavoriteRestaurantData.length > 0) {
-    firstFavoriteRestaurant.add(firstFavoriteRestaurantData.shift())
-}
-const firstFavoriteColor = new Set()
-while (firstFavoriteColorData.length > 0) {
-    firstFavoriteColor.add(firstFavoriteColorData.shift())
-}
+const firstFavoriteRestaurant = [...new Set(firstFavoriteRestaurantArray)]
+
+const firstFavoriteColor = [...new Set(firstFavoriteColorArray)]
+
 
 const firstUser = {
     name: "Monica",
@@ -52,7 +48,7 @@ const firstUser = {
     favoriteRestaurant: firstFavoriteRestaurant,
 }
 
-const secondFavoriteRestaurantData = [
+const secondFavoriteRestaurantArray = [
     "Tempura",
     "Bento",
     "Sushi",
@@ -64,17 +60,12 @@ const secondFavoriteRestaurantData = [
     "Eggy",
 ]
 
-const secondFavoriteColorData = ["Blue", "Black", "Gray"]
+const secondFavoriteColorArray = ["Blue", "Black", "Gray"]
 
-const secondFavoriteRestaurant = new Set()
-while (secondFavoriteRestaurantData.length > 0) {
-    secondFavoriteRestaurant.add(secondFavoriteRestaurantData.shift())
-}
+const secondFavoriteRestaurant = [...new Set(secondFavoriteRestaurantArray)]
 
-const secondFavoriteColor = new Set()
-while (secondFavoriteColorData.length > 0) {
-    secondFavoriteColor.add(secondFavoriteColorData.shift())
-}
+const secondFavoriteColor = [...new Set(secondFavoriteColorArray)]
+
 
 const secondUser = {
     name: "Wendy",
